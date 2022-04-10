@@ -1,12 +1,8 @@
 package za.ac.mycput.Repository.SalesReport.Impl;
 
-
-
-import za.ac.mycput.Entity.Customer;
 import za.ac.mycput.Entity.SalesReport;
 import za.ac.mycput.Repository.SalesReport.ISalesreportRepository;
-import za.ac.mycput.Repository.customer.ICustomerRepository;
-import za.ac.mycput.Repository.customer.impl.CustomerRepositoryImpl;
+
 
 import java.util.HashSet;
 import java.util.Set;

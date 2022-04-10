@@ -1,10 +1,14 @@
+/* Customer.java
+ Entity for the Customer
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date: 05 April 2022
+*/
 package za.ac.mycput.Factory;
 
 import org.junit.jupiter.api.Test;
 import za.ac.mycput.Entity.Customer;
 
 import static org.junit.Assert.assertNotNull;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerFactoryTest {
 
