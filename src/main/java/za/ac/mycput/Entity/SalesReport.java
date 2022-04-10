@@ -1,15 +1,21 @@
+/* Customer.java
+ Entity for the Customer
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date: 04 April 2022
+*/
+
 package za.ac.mycput.Entity;
 
-public class ProductReport {
+public class SalesReport {
     private int id;
     private String date ;
     private double total;
     private int quantity;
     private int itemSoldId;
 
-    public ProductReport() {
+    public SalesReport() {
     }
-    public ProductReport(Builder builder) {
+    public SalesReport(Builder builder) {
         this.id = builder.id;
         this.date= builder.date;
         this.total = builder.total;
@@ -101,18 +107,18 @@ public class ProductReport {
             return this;
         }
 
-        public Builder copy(ProductReport productReport){
-            this.id= productReport.id;
-            this.date = productReport.date;
-            this.quantity = productReport.quantity;
-            this.total = productReport.total;
-            this.itemSoldId= productReport.itemSoldId;
+        public Builder copy(SalesReport salesReport){
+            this.id= salesReport.id;
+            this.date = salesReport.date;
+            this.quantity = salesReport.quantity;
+            this.total = salesReport.total;
+            this.itemSoldId= salesReport.itemSoldId;
 
 
             return this;
         }
-        public ProductReport build(){
-            return new ProductReport(this);
+        public SalesReport build(){
+            return new SalesReport(this);
         }
     }
 }
