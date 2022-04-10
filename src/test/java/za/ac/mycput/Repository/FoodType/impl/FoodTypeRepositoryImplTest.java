@@ -1,7 +1,7 @@
 package za.ac.mycput.Repository.FoodType.impl;
 
 /*FoodTypeRepositoryImplTest.java
-  Repository for FoodItem
+  Repository Test for FoodItem
   Author: Anicka Schouw 217284183
   Date: April 2022
 */

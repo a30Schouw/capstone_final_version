@@ -1,9 +1,9 @@
 package za.ac.mycput.Factory;
 
 /*FoodTypeFactoryTest.java
-        Factory for FoodType
-        Author: Anicka Schouw 217284183
-        Date: April 2022
+  Factory Test for FoodType
+  Author: Anicka Schouw 217284183
+  Date: April 2022
 */
 
 import org.junit.jupiter.api.Test;
