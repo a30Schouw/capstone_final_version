@@ -2,7 +2,7 @@ package za.ac.mycput.Entity;
 /* Customer.java
  Entity for the Customer
  Author: Marco Mulondayi Tshimanga (219049505)
- Date: 04 April 2022
+ Date: 05 April 2022
 */
 public class Customer {
     private String id;
