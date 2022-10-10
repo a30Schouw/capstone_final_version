@@ -6,11 +6,11 @@
 
 package za.ac.mycput.Factory;
 
-import za.ac.mycput.Entity.Customer;
+import za.ac.mycput.Domain.Customer;
 
 public class CustomerFactory {
-public static Customer createCustomer( String id,String custFirstName, String custLastName,long custPhoneNumber, String custGender, String custAddress) {
- return new Customer.Builder().setCustIdNumber(id).setCustFirstName(custFirstName).setCustLastName(custLastName).setCustPhoneNumber(custPhoneNumber).setCustAddress(custAddress).setCustGender(custGender).build();
+public static Customer createCustomer( int id,String custFirstName, String custLastName,String custPhoneNumber, String custGender, String custAddress) {
+ return new Customer.Builder().setCustomerId(id).setCustomerFirstName(custFirstName).setCustomerLastName(custLastName).setCustomerPhoneNumber(custPhoneNumber).setCustomerAddress(custAddress).setCustomerGender(custGender).build();
 
 }
 }

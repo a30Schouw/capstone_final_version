@@ -4,7 +4,7 @@
  Author: Marco Mulondayi Tshimanga (219049505)
  Date: 04 April 2022
 */package za.ac.mycput.Factory;
-import za.ac.mycput.Entity.SalesReport;
+import za.ac.mycput.Domain.SalesReport;
 
 public class SalesReportFactory {
     public static SalesReport createProductReport(int id, String date, double total, int quantity, int itemSoldId) {
