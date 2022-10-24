@@ -1,29 +1,42 @@
-package za.ac.mycput.Entity;
-
-/*FoodItem.java
- Entity for FoodItem
- @author: Anicka Schouw 217284183
- Date: April 2022
+package za.ac.mycput.Domain;
+/*
+FoodItem.java
+Entity class for FoodItem
+@author: Anicka Schouw 217284183
+Date: October 2022
  */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
-public class FoodItem {
+@Entity
+@Table(name = "food_item")
+public class FoodItem implements Serializable
+{
+    @Id
+    @Column(name = "item_id")
+    private String itemID;
+    @NotNull
+    private String itemName,foodType;
+    private int amountOfItems,itemPrice;
 
-    private String itemName;
-    private int amountOfItems;
-    private double itemPrice;
-    private String foodType;
+    protected FoodItem(){}
 
-    private FoodItem(){
-
-    }
-
-    private FoodItem(Builder builder){
+    private FoodItem(Builder builder)
+    {
+        this.itemID = builder.itemID;
         this.itemName = builder.itemName;
         this.amountOfItems = builder.amountOfItems;
         this.itemPrice = builder.itemPrice;
         this.foodType = builder.foodType;
     }
 
+    public String getItemID() {
+        return itemID;
+    }
     public String getItemName() {
         return itemName;
     }
@@ -32,7 +45,7 @@ public class FoodItem {
         return amountOfItems;
     }
 
-    public double getItemPrice() {
+    public int getItemPrice() {
         return itemPrice;
     }
 
@@ -43,18 +56,26 @@ public class FoodItem {
     @Override
     public String toString() {
         return "FoodItem{" +
-                "itemName='" + itemName + '\'' +
-                ", amountOfItems=" + amountOfItems +
-                ", itemPrice=" + itemPrice +
+                "itemID='" + itemID + '\'' +
+                ", itemName='" + itemName + '\'' +
+                ", amountOfItems='" + amountOfItems + '\'' +
+                ", itemPrice='" + itemPrice + '\'' +
                 ", foodType='" + foodType + '\'' +
                 '}';
     }
 
     public static class Builder{
-        private String itemName;
-        private int amountOfItems;
-        private double itemPrice;
-        private String foodType;
+        private String itemID;
+        private String itemName,foodType;
+
+        private int amountOfItems, itemPrice;
+
+
+        public Builder setItemID(String itemID) {
+            this.itemID = itemID;
+            return this;
+        }
+
 
         public Builder setItemName(String itemName) {
             this.itemName = itemName;
@@ -66,7 +87,7 @@ public class FoodItem {
             return this;
         }
 
-        public Builder setItemPrice(double itemPrice) {
+        public Builder setItemPrice(int itemPrice) {
             this.itemPrice = itemPrice;
             return this;
         }
@@ -77,6 +98,7 @@ public class FoodItem {
         }
 
         public Builder copy(FoodItem fooditem){
+            this.itemID = fooditem.itemID;
             this.itemName = fooditem.itemName;
             this.amountOfItems = fooditem.amountOfItems;
             this.itemPrice = fooditem.itemPrice;

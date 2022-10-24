@@ -1,18 +1,13 @@
 package za.ac.mycput.Repository.FoodType;
-
 /*IFoodTypeRepository.java
-  Repository for FoodItem
-  Author: Anicka Schouw 217284183
-  Date: April 2022
+  Repository interface for FoodType Domain
+  @author: Anicka Schouw 217284183
+  Date: October 2022
 */
-
-import za.ac.mycput.Entity.FoodType;
-import za.ac.mycput.Repository.IRepository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
+import za.ac.mycput.Domain.FoodType;
 import java.util.Set;
-
-public interface IFoodTypeRepository extends IRepository<FoodType, String> {
-
-    public Set<FoodType> getAll();
+public interface IFoodTypeRepository extends JpaRepository<FoodType, String> {
+    Set<FoodType> getAll();
 
 }

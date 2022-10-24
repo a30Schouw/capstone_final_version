@@ -1,20 +1,18 @@
-package za.ac.mycput.Repository.FoodType.impl;
+//package za.ac.mycput.Repository.FoodType.impl;
 
 /*FoodTypeRepositoryImplTest.java
-  Repository Test for FoodItem
-  Author: Anicka Schouw 217284183
-  Date: April 2022
+  Repository Test case for FoodType domain
+  @author: Anicka Schouw 217284183
+  Date: October 2022
 */
-
+/*
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.mycput.Entity.FoodType;
+import za.ac.mycput.Domain.FoodType;
 import za.ac.mycput.Factory.FoodTypeFactory;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 
@@ -60,3 +58,5 @@ class FoodTypeRepositoryImplTest {
         System.out.println(repo.getAll());
     }
 }
+
+ */

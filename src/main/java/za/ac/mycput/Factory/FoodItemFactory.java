@@ -1,21 +1,19 @@
 package za.ac.mycput.Factory;
-
-/*FoodItemFactory.java
-        Factory for FoodItem
-        Author: Anicka Schouw 217284183
-        Date: April 2022
-*/
-import za.ac.mycput.Entity.FoodItem;
+/*
+FoodItemFactory.java
+Factory class for domain class FoodItem
+@author: Anicka Schouw 217284183
+Date: October 2022
+ */
+import za.ac.mycput.Domain.FoodItem;
 
 public class FoodItemFactory {
-
-    public static FoodItem createFoodItem(String itemName, int amountOfItems, double itemPrice, String foodType){
-        FoodItem foodItem = new FoodItem.Builder().setItemName(itemName)
+    public static FoodItem createFoodItem(String itemID, String itemName, int amountOfItems, int itemPrice, String foodType){
+        return new FoodItem.Builder().setItemID(itemID)
+                .setItemName(itemName)
                 .setAmountOfItems(amountOfItems)
                 .setItemPrice(itemPrice)
                 .setFoodType(foodType)
                 .build();
-        return foodItem;
     }
-
 }

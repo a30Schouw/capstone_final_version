@@ -1,12 +1,12 @@
-package za.ac.mycput.Repository.FoodType.impl;
+//package za.ac.mycput.Repository.FoodType.impl;
 
 /*FoodTypeRepository.java
-  Repository for FoodItem
-  Author: Anicka Schouw 217284183
-  Date: April 2022
+  Repository for FoodType Domain implementation
+  @author: Anicka Schouw 217284183
+  Date: October 2022
 */
-
-import za.ac.mycput.Entity.FoodType;
+/*
+import za.ac.mycput.Domain.FoodType;
 import za.ac.mycput.Repository.FoodType.IFoodTypeRepository;
 
 import java.util.HashSet;
@@ -73,3 +73,4 @@ public class FoodTypeRepositoryImpl implements IFoodTypeRepository {
         return foodTypeDB;
     }
 }
+ */
